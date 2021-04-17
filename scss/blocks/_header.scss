@@ -1,0 +1,48 @@
+.header {
+    background-color: $dark-blue;
+
+    &__wrapper {
+        min-height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navigation {
+        display: none;
+
+    }
+
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+
+    &__search,
+    &__button {
+        border: none;
+        background-color: transparent;
+        outline: none;
+    }
+
+    &__button:hover,
+    &__button:focus,
+    &__search:hover,
+    &__search:focus {
+        opacity: .7;
+    }
+
+    &__search:active,
+    &__button:active {
+        opacity: .5;
+    }
+
+    &__link {
+        margin: 0 0 0 33px;
+    }
+
+     &__button-burger:hover .header__navigation {
+        width: 230px;
+        display: block;
+
+    } 
+}

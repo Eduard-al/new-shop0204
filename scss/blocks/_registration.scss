@@ -1,0 +1,107 @@
+.registration {
+    .registration__top {
+        height: 148px;
+        background-color: $pink;
+        text-transform: uppercase;
+        margin-bottom: 64px;
+    }
+
+    .registration__heading {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $dark-pink;
+        padding: 59px 0;
+    }
+
+
+    .registration__form fieldset {
+        border: none;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 35px;
+        color: $dark-gray;
+    }
+
+    .registration__form-tr {
+        display: none;
+
+    }
+
+    .registration__form-label {
+        margin: 0 27px 0 20px;
+        position: relative;
+        font-size: 11px;
+        line-height: 13px;
+        color: $dark-blue;
+
+    }
+
+    .registration__form-label:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 2px solid;
+        border-radius: 50%;
+        position: absolute;
+        left: -20px;
+        top: 0;
+    }
+
+    .registration__form-tr:checked+.registration__form-label:after {
+        background: $dark-pink;
+    }
+
+    .registration__form legend {
+        margin-bottom: 20px;
+        color: $dark-blue
+    }
+
+    .registration__form-your-name,
+    .registration__form-login-details {
+        width: 360px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 13px;
+        margin-bottom: 20px;
+        color: $dark-gray;
+    }
+
+    .registration__form-login-details__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .registration__form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .registration__form-fieldset {
+        max-width: 360px;
+    }
+
+    .registration__form-btn__join {
+        display: block;
+        padding: 14px 38px;
+        border: 1px solid $dark-pink;
+        color: $dark-pink;
+        margin: 48px 0 95px;
+        background-color: $white;
+    }
+
+    .registration__form-btn__join:hover {
+        background-color: $dark-pink;
+        color: $white;
+        transition: background 0.5s;
+    }
+
+}
