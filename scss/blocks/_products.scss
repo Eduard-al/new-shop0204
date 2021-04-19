@@ -1,0 +1,102 @@
+.products {
+    .products__heading {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: center;
+        margin: 96px 0 6px 0;
+    }
+
+    .products__text {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        margin-bottom: 48px;
+        text-align: center;
+        color: #9F9F9F;
+    }
+
+    .products__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .products__item {
+        position: absolute;
+        max-width: 360px;
+        background: $lite-gray;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &:hover .products__item-btn__add,
+        &:hover .products__item-overley {
+            display: block;
+            background: rgba(58, 56, 56, 0.86);
+        }
+
+        &:hover .products__item-overley img {
+            opacity: .2;
+        }
+    }
+
+    .products__item-heading {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        margin: 23px 0 12px 18px;
+        text-transform: uppercase;
+    }
+
+    .products__item-text {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px;
+        margin: 0 18px;
+        color: #5d5d5d;
+    }
+
+    .products__item-price {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        color: $dark-pink;
+        margin: 18px;
+    }
+
+    .products__item-overley {
+        position: relative;
+    }
+
+    .products__item-btn__add {
+        padding: 13px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $white;
+        color: $white;
+        display: none;
+    }
+
+    .products__btn-all_product {
+        display: block;
+        padding: 14px 38px;
+        border: 1px solid $dark-pink;
+        color: $dark-pink;
+        margin: 48px auto 95px;
+        background-color: $white;
+    }
+
+    .products__btn-all_product:hover {
+        background-color: $dark-pink;
+        color: $white;
+        transition: background 0.5s;
+    }
+}

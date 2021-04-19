@@ -1,0 +1,122 @@
+.footer {
+
+    .footer__top-review {
+        text-align: center;
+        width: 359px;
+    }
+
+    .footer__top-review__text {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer__top {
+        position: relative;
+        justify-content: space-between;
+        min-height: 448px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__top-img {
+        display: block;
+        position: absolute;
+        opacity: .4;
+    }
+
+    .footer__top-form {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__top-form_box {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .footer__top-heading {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px;
+        text-transform: uppercase;
+    }
+
+    .footer__top-text {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+
+    .footer__top-input,
+    .footer__top-btn {
+        padding: 18px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .footer__top-input {
+        border-radius: 30px 0 0 30px;
+        border: 0 solid;
+        background-color: $gray;
+    }
+
+    .footer__top-btn {
+        color: $white;
+        background-color: $dark-pink;
+        border-radius: 0 30px 30px 0;
+        border: 0 solid;
+    }
+
+    .footer__down {
+        background-color: $dark-blue
+    }
+
+    .footer__down-list {
+        display: flex;
+        justify-content: space-around;
+        min-height: 79px;
+        align-items: center;
+    }
+
+    .footer__down-copyright {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        color: $white;
+    }
+
+    .footer__down-soc-net {
+        display: flex;
+    }
+
+    .footer__down-soc-icon {
+        height: 32px;
+        width: 32px;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8px;
+    }
+
+    .footer__down-soc-icon:hover {
+        background-color: $dark-pink;
+        transition: .5s;
+    }
+
+    .footer__down-soc-icon:active .icon-pink {
+        fill: $white;
+    }
+}

@@ -1,0 +1,31 @@
+.loyalty {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    width: 652px;
+    color: $black;
+
+    .loyalty__heading {
+        text-transform: uppercase;
+    }
+
+    .loyalty__text {
+        margin: 21px 0;
+    }
+
+    .loyalty__item {
+        position: relative;
+        list-style: none;
+        margin: 0 0 16px 40px;
+    }
+
+    .loyalty__item::before {
+        content: '';
+        width: 20px;
+        height: 16px;
+        position: absolute;
+        background-image: url(../img/Vector.svg);
+        left: -38px;
+        top: 8px
+    }
+}
