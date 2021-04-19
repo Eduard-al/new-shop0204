@@ -4,6 +4,7 @@
         background-color: $pink;
         text-transform: uppercase;
         margin-bottom: 64px;
+        
     }
 
     .registration__heading {
@@ -14,6 +15,10 @@
         line-height: 29px;
         color: $dark-pink;
         padding: 59px 0;
+        margin: 0 auto;
+        @include mobile {
+            text-align: center;
+        }
     }
 
 
@@ -26,12 +31,16 @@
         line-height: 19px;
         margin-bottom: 35px;
         color: $dark-gray;
+        max-width: 88%;
+
+        @include mobile{
+            max-width: 96%;
+        }
+
+        
     }
 
-    .registration__form-tr {
-        display: none;
-
-    }
+    
 
     .registration__form-label {
         margin: 0 27px 0 20px;
@@ -52,6 +61,9 @@
         left: -20px;
         top: 0;
     }
+    .registration__form-tr {
+        display: none;
+    }
 
     .registration__form-tr:checked+.registration__form-label:after {
         background: $dark-pink;
@@ -64,7 +76,7 @@
 
     .registration__form-your-name,
     .registration__form-login-details {
-        width: 360px;
+        width: 100%;
         font-style: normal;
         font-weight: 300;
         font-size: 13px;
@@ -83,10 +95,21 @@
     .registration__form {
         display: flex;
         justify-content: space-between;
+        margin: 0 auto;
+
+        @include mobile {
+            flex-direction: column;
+            margin: 0 auto;
+        }
     }
 
     .registration__form-fieldset {
-        max-width: 360px;
+        @include tablet {
+            max-width: 50%;
+        }
+        @include mobile {
+            max-width: 100%;
+        }
     }
 
     .registration__form-btn__join {
