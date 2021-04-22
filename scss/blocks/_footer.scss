@@ -1,8 +1,15 @@
 .footer {
-
+    overflow: hidden;
     .footer__top-review {
-        text-align: center;
         width: 359px;
+        text-align: center;
+        flex-direction: column;
+        
+
+        @include tablet {
+            margin: 53px auto 48px;
+           
+        }
     }
 
     .footer__top-review__text {
@@ -17,21 +24,61 @@
     .footer__top {
         position: relative;
         justify-content: space-between;
-        min-height: 448px;
+        height: 448px;
         display: flex;
         align-items: center;
+        overflow: hidden;
+
+        @include tablet {
+            height: 614px;
+        }
+
+       
     }
 
     .footer__top-img {
         display: block;
         position: absolute;
+        overflow: hidden;
+        
+        
+        width: 100%;
+        
+        @include tablet {
+            height: 100%;
+            
+        }
+        
+    }
+    .footer__top-img img {
+        width: 100%;
         opacity: .4;
+        @include tablet {
+            min-height: 100%;
+            width: auto;
+        }
+    }
+
+    .footer__top-content {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        z-index: 1;
+
+        @include tablet {
+            
+            flex-direction: column;
+        }
     }
 
     .footer__top-form {
         text-align: center;
         display: flex;
         flex-direction: column;
+
+        @include tablet {
+            margin-bottom: 140px;
+        }
     }
 
     .footer__top-form_box {
@@ -84,9 +131,14 @@
 
     .footer__down-list {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         min-height: 79px;
         align-items: center;
+        margin: 0 auto;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
     }
 
     .footer__down-copyright {
@@ -95,10 +147,13 @@
         font-weight: 400;
         line-height: 19px;
         color: $white;
+        margin-bottom: 24px;
     }
 
     .footer__down-soc-net {
         display: flex;
+        margin-top: 43px;
+        margin-bottom: 25px;
     }
 
     .footer__down-soc-icon {
@@ -116,7 +171,7 @@
         transition: .5s;
     }
 
-    .footer__down-soc-icon:active .icon-pink {
+    .footer__down-soc-icon:active .footer__down-icon-pink {
         fill: $white;
     }
 }

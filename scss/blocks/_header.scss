@@ -1,17 +1,16 @@
 .header {
     background-color: $dark-blue;
+    position: relative;
 
     &__wrapper {
         min-height: 75px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 auto;
     }
 
-    &__navigation {
-        display: none;
-
-    }
+    
 
     &__logo {
         margin: 0 41px 0 0;
@@ -37,12 +36,106 @@
     }
 
     &__link {
-        margin: 0 0 0 33px;
+        margin: 0 0 0 32px;
     }
 
-     &__button-burger:hover .header__navigation {
-        width: 230px;
-        display: block;
+    &__button--burger {
+        border: none;
+        background-color: transparent;
+        outline: none;
 
+        &:hover img {
+            opacity: .7;
+        }
+        &:focus .header__navigation {
+           opacity: 1;
+           display: block;
+           position: absolute;
+           top: 75px;
+           right: 0;
+           z-index: 1;
+
+           @include mobile {
+               width: 100%;
+           }
+        }
     } 
+
+    &__navigation {
+        text-align: left;
+        
+        display: none;
+        width: 232px;
+        background: $white;
+
+        &-title {
+            @include font(14px,17px,700,bold);
+            color:$black;
+            text-transform: uppercase;
+            margin-top: 37px;
+            margin-left: 34px;
+            margin-bottom: 24px;
+            
+            
+        }
+
+        &-item__link {
+            @include font(14px,17px,700,normal);
+            color: $dark-pink;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-top: 37px;
+            margin-left: 34px;
+            margin-bottom: 24px;
+            
+            
+        }
+
+        &-item {
+            margin-top: 24px;
+            
+            margin-bottom: 24px;
+        }
+
+        &-item__sub-item {
+            margin-top: 12px;
+            margin-left: 54px;
+            
+        }
+
+        &-item__sub-item-link {
+            text-decoration: none;
+            color: $color-link;
+
+            @include font(14px,17px,400,normal);
+
+            &:hover {
+                color: $dark-pink;
+            }
+        }
+}
+    
+
+}
+
+@media (max-width: $desktop-width) {
+    .header {
+        padding: 0 16px;
+        &__link {
+            margin: 0 0 0 25px;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .header {
+        padding: 0;
+        &__link {
+            margin: 0 0 0 25px;
+
+            &--mobile-hidden {
+                display: none;
+            }
+        }
+    }
 }
