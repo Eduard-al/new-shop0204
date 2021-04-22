@@ -1,0 +1,41 @@
+.breadcrumb {
+    height: 148px;
+    background-color: $pink;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    .breadcrumb__heading {
+        @include font(24px,29px,400);
+        color: $dark-pink;
+        display: flex;
+        align-items: center;
+        
+    }
+    .breadcrumb__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .breadcrumb-list{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+    .breadcrumbs-item {
+        display: block;
+        float:left;
+        margin-right: 5px;
+      }
+    
+    .breadcrumbs-link{
+        @include font(14px,17px,300);
+        color: $color-link;
+    }
+    .breadcrumbs-link:not(span):hover {
+        text-decoration: underline;
+        color: $dark-pink;
+    }
+    
+    .breadcrumbs-span{
+        color: $dark-pink;
+    }
+}

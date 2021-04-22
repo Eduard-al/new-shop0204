@@ -1,0 +1,101 @@
+
+
+.product-description {
+    margin-top: -55px;
+    border: 1px solid $gray;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $white;
+    margin-bottom: 128px;
+    position: relative;
+    z-index: 3;
+    @include tablet {
+        margin-top: 0;
+        border: none;
+    }
+    &__heading {
+        text-transform: uppercase;
+        @include font(14px,17px,300);
+        color: $dark-pink;
+        margin-top: 64px;
+        
+       
+    }
+    
+    &__hr-top {
+        width: 63px;
+        size: 3;
+        color: $dark-pink ;
+        margin: 12px;
+    
+    }
+    
+    &__hr-bottom {
+        width: 641px;
+        color: $dark-gray;
+        margin-top: 65px;
+    }
+    
+    &__sub-heading {
+        text-transform: uppercase;
+        @include font(18px,22px,300);
+        color: $moschino;
+    }
+    &__text {
+        max-width: 565px;
+        @include font(14px,16px,300);
+        color: $color-link;
+        margin-top: 48px;
+        text-align: center;
+    }
+    
+    &__price {
+        margin-top: 32px;
+        @include font(24px,29px,300);
+        color: $dark-pink;
+    }
+    
+    &__drop-downs {
+        margin-top: 65px;
+    }
+    &__color,
+    &__size,
+    &__quantity {
+        border: none;
+        @include font(14px,17px,400);
+        text-transform: uppercase;
+        @include mobile {
+            @include font(10px,12px,400); 
+        }
+    }
+    &__color,
+    &__size{
+        margin-right: 23px;
+    }
+    &__btn {
+        border: 1px solid $dark-pink ;
+        padding: 14px 56px;
+        margin-top: 48px;
+        margin-bottom: 65px;
+        color: $dark-pink;
+        @include font(16px,19px,300)
+    }
+    &__btn:hover {
+        color: $white;
+        background-color:$dark-pink ;
+    }
+    
+    &__active-tablet {
+        @include tablet {
+            display: none;
+            margin-right: 25px;
+        }
+    }
+    &__active-mobile {
+        @include mobile {
+            display: none;
+        }
+    }
+}
