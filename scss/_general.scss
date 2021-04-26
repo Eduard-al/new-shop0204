@@ -20,6 +20,10 @@ body {
     clip: rect(0 0 0 0);
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover {
     opacity: .5;
     transition: .4s;
@@ -35,5 +39,46 @@ a:hover {
         width: 92%;
         
     }
+    
+
+    
+}
+.carousel {
+    max-height: 777px;
+    border-bottom:1px solid $gray;
+    z-index: 1;
 }
 
+.w-100 {
+    width: 38% !important;
+    margin: 0 auto;
+}
+   
+
+.carousel-item img{
+    max-height: 724px;
+    max-width: 597px;
+}     
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,<svg width='13' height='23' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 23' fill='#{$carousel-control-color}'><path d='M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z' /></svg>");
+    background-color: $dark-gray;
+    background-size: 30%;
+}
+.carousel-control-next-icon {
+    background-image  : url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 23' fill='#{$carousel-control-color}'><path d='M0.299805 19.2499L8.0498 11.4999L0.299805 3.7499L1.8498 0.649902L12.6998 11.4999L1.8498 22.3499L0.299805 19.2499Z'/></svg>");
+    background-color: $dark-gray;
+    background-size: 30%;
+
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 47px;
+    height: 47px;
+    padding: 13px;
+    
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 3%;
+}
