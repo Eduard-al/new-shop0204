@@ -1,0 +1,236 @@
+.basket-form {
+    margin: 96px auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet{
+        flex-direction: column;
+        
+    }
+
+    &__list {
+        
+        width: 57%;
+        @include tablet{
+            width: 100%;
+            
+        }
+    }
+    &__item {
+        
+        display: flex;
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+        margin-bottom: 20px;
+        position: relative;
+
+        @include mobile {
+            height: 188px;
+        }
+
+        &-price {
+            color: $dark-pink;
+        }
+
+        &-quantity {
+            height: 23px;
+            width: 37px;
+            border: 1px solid $gray;
+            margin-left: 20px;
+            padding-left: 17px;
+        }
+
+        &-button {
+            position: absolute;
+            top: 28px;
+            right: 22px;
+            border: none;
+            background-color: $white;
+
+            @include mobile{
+                top: 17px;
+                right: 12px;  
+            }
+        }
+
+        &-x {
+            @include mobile {
+                width: 12px;
+            }
+            
+        }
+
+        &-button:active &{
+            display: none;
+
+        }
+        &-hiding {
+            text-transform: uppercase;
+            margin: 22px 0 42px;
+            @include font (24px,29px,400);
+
+            @include mobile {
+                @include font (15px,19px,400); 
+                margin: 13px 28px 25px 0;
+
+            }
+            
+        }
+        &-text {
+            margin-left: 31px;
+            @include font (22px,43px,400);
+
+            @include mobile {
+                margin-left: 17px;
+                @include font (14px,24px,400); 
+            }
+        }
+    }
+
+
+    
+
+    
+
+    &__button-box{
+        margin-top: 72px;
+        /* height: 50px; */
+        display: flex;
+        justify-content: space-between;
+        @include tablet{
+            justify-content: space-around;
+        }
+        @include mobile {
+            justify-content: space-between;
+        }
+    }
+    &__button {
+        text-transform: uppercase;
+
+        height: 50px;
+        @include font(14px,16px,300);
+        border: 1px solid $dark-gray;
+        background: $white;
+        width: 235px;
+        
+
+        @include mobile {
+            @include font(12px,14px,400);
+            width: 49%;
+
+            height: 33px;
+        }
+        
+    }
+    &__checkout {
+        flex-direction: column;
+        
+        @include tablet{
+            display: flex;
+            margin-top: 64px;
+            flex-direction: row;
+            justify-content: space-between
+            
+            
+        }
+         @include mobile {
+             flex-direction: column
+         }
+    }
+    &__adress legend {
+        @include font(16px,19px,300);
+        text-transform: uppercase;
+    }
+    &__adress {
+        @include tablet{
+            width: 46%;  
+        }
+        
+        @include mobile {
+            width: 96%;
+        }
+
+    }
+
+    &__input {
+        width: 360px;
+        height: 45px;
+        margin: 20px 0;
+        padding-left: 17px;
+        color: $dark-gray;
+        border: 1px solid $dark-gray;
+        @include tablet{
+            width: 100%;
+        } 
+    }
+    
+    &__adress-btn {
+        height: 34px;
+        margin: 20px 0;
+        padding:0 15px;
+        color: $dark-gray;
+        border: 1px solid $dark-gray;
+        text-transform: uppercase;
+        @include font(11px,13px,300);
+        background-color: $white;
+
+    }
+    &__amount {
+        background-color: $lite-gray;
+        margin-top: 57px;
+        height: 214px;
+        @include tablet {
+            width: 46%;
+        }
+
+        @include mobile {
+            width: 96%;
+        }
+
+        
+
+        &-subtotal {
+            @include font(11px,13px,400);
+            text-transform: uppercase;
+            display: flex;
+            justify-content: flex-end;
+            margin: 39px 34px 12px;
+            padding-top: 34px;
+            
+            @include tablet{
+                padding-top: 0;
+            }
+        }
+
+            & span {
+                margin-left: 20px;
+            
+        }
+        &-grandtotal {
+            @include font(16px,19px,300);
+            text-transform: uppercase;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 34px;
+            & span {
+                color: $dark-pink;
+                margin-left: 20px;
+            }
+        }
+        &-hr {
+            width: 275px;
+            margin: 21px auto 0;
+        }
+        &-btn {
+            display: block;
+            text-transform: uppercase;
+            @include font(16px,19px,300);
+            padding: 15px 43px;
+            margin: 17px auto  ;
+            background-color: $dark-pink;
+            color: $white;
+            border: none;
+        }
+    }
+
+
+}
