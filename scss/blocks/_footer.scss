@@ -22,34 +22,22 @@
     }
 
     .footer__top {
-        position: relative;
+        
         justify-content: space-between;
-        height: 448px;
+        min-height: 448px;
         display: flex;
         align-items: center;
         overflow: hidden;
-
-        @include tablet {
-            height: 614px;
-        }
+        background-image: url(../img/footer-preview.png) ;
+        background-repeat:no-repeat;
+        
+        background-size: cover;
+        
 
        
     }
 
-    .footer__top-img {
-        display: block;
-        position: absolute;
-        overflow: hidden;
-        
-        
-        width: 100%;
-        
-        @include tablet {
-            height: 100%;
-            
-        }
-        
-    }
+   
     .footer__top-img img {
         width: 100%;
         opacity: .4;
