@@ -1,6 +1,6 @@
 .filters {
     display: flex;
-    /* justify-content: space-between; */
+    
     @include tablet {
         justify-content: space-between;
     }
@@ -65,10 +65,7 @@
             margin: 24px ;
             
         }
-       /*  &-span:hover+&-sub-category,
-        &-span:focus+&-sub-category {
-            display: block;
-        } */
+       
 
         &-sub-category:hover{
             display: block;
