@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     
 }
 
@@ -81,4 +81,20 @@ a:hover {
 }
 .carousel-control-prev, .carousel-control-next {
     width: 3%;
+}
+
+.page-link {
+    color: $gray;
+    border: none;
+    @include font(16px,19px,300)  
+}
+
+.page-link :hover,
+.page-link :focus {
+    color: $dark-pink;
+    border: none;
+}
+
+.pagination {
+    border: 1px solid $dark-gray;
 }
